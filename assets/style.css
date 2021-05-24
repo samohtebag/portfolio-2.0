@@ -3,6 +3,15 @@
     --main-text-color: yellow;
 }
 
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
 body {
     background-color: var(--main-bg-color);
 }
@@ -15,17 +24,46 @@ body {
     margin-left: 20px;
     font-size: 25px;
     color: var(--main-text-color);
+    font-family: "Roboto", sans-serif;
 }
 
 .nav-item {
     font-size: 20px;
     color: var(--main-text-color);
+    font-family: monospace;
 }
 
 .intro {
     color: var(--main-text-color);
-    margin-top: 2em;
+    margin-top: 3em;
+    font-family: monospace;
+    display: inline-block;
+}
+
+.intro-text {
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end);
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.intro-desc {
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: monospace;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 10s steps(100, end);
+    white-space: nowrap;
+}
+
+.about-desc {
+    color: var(--main-text-color);
     font-size: 21px;
     text-align: center;
+    font-family: monospace;
 }
+
+
 
